@@ -1,5 +1,4 @@
 import "./Header.css";
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useStoreContext } from "../context";
 
