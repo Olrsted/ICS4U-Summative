@@ -1,0 +1,111 @@
+/* Import the pixel font (Press Start 2P) from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.poster-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #151515; /* Dark background */
+  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
+}
+
+.poster-item {
+  width: 160px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.poster-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.poster-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.poster-title {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: white; /* White text */
+  font-weight: bold;
+}
+
+.poster-item:hover .poster-image {
+  transform: scale(1.05);
+}
+
+.buy-button {
+  background-color: #003366; /* Dark blue background for the button */
+  color: white; /* White text */
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #005f8a; /* Lighter blue when hovered */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  background-color: #003366; /* Dark blue background for the pagination buttons */
+  border: none;
+  color: white; /* White text */
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 15px;
+  transition: background-color 0.3s ease;
+}
+
+.page-button:hover {
+  background-color: #005f8a; /* Lighter blue when hovered */
+}
+
+#page-count {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+/* Ensure mobile responsiveness */
+@media (max-width: 768px) {
+  .poster-item {
+    width: 140px;
+  }
+
+  .page-button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .poster-item {
+    width: 120px;
+  }
+
+  .page-button {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}

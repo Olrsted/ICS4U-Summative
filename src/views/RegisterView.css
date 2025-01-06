@@ -1,0 +1,224 @@
+/* Import the pixel font (Press Start 2P) from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background-color: #141414;
+  color: white;
+}
+
+.sign-up-page {
+  min-height: 100vh;
+  background-image: url(/src/imgs/HeroBG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
+}
+
+.sign-up {
+  width: 90%;
+  margin-top: 10px;
+  max-width: 430px;
+  padding: 30px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign-up h2 {
+  color: #003366;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
+}
+
+.sign-up form {
+  margin: 25px 0 40px;
+}
+
+form .info {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.info input {
+  width: 100%;
+  max-width: 390px;
+  height: 50px;
+  background: #e6f0ff;
+  border: 2px solid #b3c7e6;
+  border-radius: 4px;
+  color: #003366;
+  font-size: 1rem;
+  padding: 0px 20px;
+  transition: all 0.2s ease, transform 0.2s ease;
+  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
+}
+
+.info input:focus {
+  background: #cce0ff;
+  outline: none;
+  transform: scale(1.02);
+}
+
+.info input:is(:focus, :valid) {
+  padding: 16px 20px 0;
+}
+
+.info label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  color: #8c8c8c;
+  pointer-events: none;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  transition: transform 0.2s ease, font-size 0.2s ease;
+  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
+}
+
+.info input:is(:focus, :valid)~label {
+  transform: translateY(-130%);
+  font-size: 0.75rem;
+}
+
+form .sign-up-btn {
+  width: 100%;
+  padding: 16px 0;
+  font-size: 1rem;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+  margin: 20px 0 10px;
+  cursor: pointer;
+  background-color: #003366;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
+}
+
+form .sign-up-btn:hover {
+  background: #005bb5;
+  transform: scale(1.05);
+}
+
+form .help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form .remember {
+  display: flex;
+  align-items: center;
+}
+
+form .remember input {
+  margin-right: 5px;
+  accent-color: #003366;
+}
+
+form .help :where(label, a) {
+  font-size: 0.9rem;
+}
+
+.sign-up :where(label, p, a) {
+  color: #8c8c8c;
+}
+
+.sign-up p a {
+  color: #003366;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
+}
+
+.sign-up p a:hover {
+  text-decoration: underline;
+  color: #005bb5;
+}
+
+@media (max-width: 740px) {
+  .sign-up {
+    top: 45%;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .info input {
+    width: 100%;
+  }
+
+  .sign-up h2 {
+    font-size: 1.75rem;
+  }
+
+  .sign-up-btn {
+    font-size: 1.1rem;
+    padding: 14px 0;
+  }
+
+  .info {
+    margin-bottom: 20px;
+  }
+}
+
+/* Genre selection styles */
+.genre-selection {
+  margin-top: 20px;
+}
+
+.genre-selection h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.genre-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: black;
+}
+
+.genre-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+
+.genre-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+.genre-checkbox label {
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: black; /* Dark blue button background */
+  color: black;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background: #005bb5; /* Lighter blue on hover */
+}
+

@@ -1,0 +1,81 @@
+/* Import the pixel font (Press Start 2P) from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.featured-content-container {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.featured-content {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px;
+  color: white; /* White text for contrast */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
+}
+
+.featured-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 50px;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 1px;
+  color: #fff; /* White title text */
+}
+
+.featured-text {
+  font-size: 1rem;
+  max-width: 600px;
+  margin-top: 15px;
+  line-height: 1.4;
+  margin-left: 10px;
+  color: #fff; /* White text for featured description */
+}
+
+.featured-button-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.featured-button {
+  padding: 12px 80px;
+  background-color: #003366; /* Dark blue background for button */
+  color: white;
+  font-size: 1rem;
+  align-items: center;
+  margin-left: 10px;
+  font-weight: bold;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.featured-button a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Press Start 2P', cursive;
+  align-items: center;
+}
+
+.featured-button:hover {
+  background-color: red; /* Orange on hover for a contrast */
+}

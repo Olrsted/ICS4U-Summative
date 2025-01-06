@@ -1,0 +1,108 @@
+/* Import the pixel font (Press Start 2P) from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Overall body styling */
+body {
+    background-color: #141414; /* Dark background */
+    color: white; /* White text color */
+    font-family: 'Press Start 2P', cursive; /* Pixelated font */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('/src/imgs/HeroBG.png'); /* Ensure background image path is correct */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Contents container with background image */
+#contents {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    background-position: center;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    margin-top: 250px;
+    margin-bottom: 490px;
+}
+
+/* Styling for the heading */
+#contents h2 {
+    color: rgb(194, 39, 39); /* Red title text */
+    text-align: center;
+    font-family: 'Press Start 2P', sans-serif;
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold;
+}
+
+/* Label styling */
+#contents label {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* Input styling */
+#contents input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+#contents input:focus {
+    outline: none;
+    border-color: rgb(194, 39, 39); /* Red border on focus */
+    background-color: #003366; /* Lighter blue on focus */
+}
+
+/* Login button styling */
+#enter {
+    width: 100%;
+    padding: 15px;
+    background-color: #e50914;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#enter:hover {
+    background-color: #f40612; /* Darker red on hover */
+}
+
+/* Media Queries for mobile responsiveness */
+@media (max-width: 740px) {
+    #contents {
+        padding: 20px;
+        width: 100%;
+        top: 45%;
+    }
+
+    #contents h2 {
+        font-size: 1.5rem;
+    }
+
+    #contents input, #enter {
+        font-size: 14px;
+    }
+}

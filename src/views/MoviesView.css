@@ -1,0 +1,54 @@
+/* Import the pixel font (Press Start 2P) from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #003366; /* Dark blue background for navbar */
+  height: 75px;
+  width: 100%;
+  align-items: center; /* Vertically center items */
+  padding: 0 20px;
+}
+
+/* Navbar header (title) */
+h1 {
+  color: rgb(194, 39, 39); /* Red color for the title */
+  text-align: center;
+  font-size: 24px; /* Adjusted font size */
+  margin: 0;
+}
+
+/* Profile heading */
+#profile h1 {
+  color: white; /* White color for profile text */
+  font-size: 12px; /* Smaller font size for profile */
+}
+
+/* Button styling */
+button {
+  border: none;
+  background-color: #003366; /* Dark blue background */
+  color: rgb(194, 39, 39); /* Red color for button text */
+  font-size: 16px; /* Adjusted button font size */
+  padding: 10px 20px;
+  width: 100px;
+  height: 100%;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  font-family: 'Press Start 2P', cursive; /* Apply pixel font to buttons */
+}
+
+button:hover {
+  color: white; /* White text color on hover */
+  background-color: #005bb5; /* Lighter blue on hover */
+}
+
+/* Middle section (for other content within the navbar) */
+.middle {
+  display: flex;
+  width: 100%;
+}

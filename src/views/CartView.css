@@ -1,0 +1,100 @@
+/* Import the pixel font (Press Start 2P) from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.cart-view {
+  background-color: #141414; /* Dark background */
+  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
+  color: white; /* White text */
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cart-view h1 {
+  font-size: 36px;
+  color: rgb(194, 39, 39); /* Red color for heading */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.cart-item {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for each item */
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.9); /* Darker shadow on hover */
+}
+
+.cart-item h2 {
+  font-size: 18px;
+  color: #fff; /* White text for item titles */
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cart-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border for image */
+}
+
+.cart-item button {
+  background-color: rgb(194, 39, 39); /* Red background for button */
+  color: white; /* White text */
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0 20px 0;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  display: inline-block;
+  width: auto;
+  height: 50px;
+}
+
+.cart-item button:hover {
+  background-color: #f40612; /* Lighter red color on hover */
+}
+
+/* Ensure mobile responsiveness */
+@media (max-width: 768px) {
+  .cart-item {
+    width: 200px;
+  }
+
+  .cart-item button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-item {
+    width: 180px;
+  }
+
+  .cart-item button {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}

@@ -1,0 +1,149 @@
+/* Container for the movie list */
+.feature-list-container {
+  padding: 40px 20px;
+  height: auto; /* Remove fixed height to allow content to extend vertically */
+  background-color: #111; /* Dark background */
+}
+
+/* Title container styling */
+.titles-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Movie list title */
+.feature-list-title {
+  font-size: 34px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Press Start 2P', sans-serif; /* Pixelated font */
+}
+
+/* Link to more movies */
+.feature-list-more {
+  font-size: 18px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Press Start 2P', sans-serif; /* Pixelated font */
+}
+
+.feature-list-more:hover {
+  color: #ffa31a;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Wrapper for the movie list */
+.feature-list-wrapper {
+  position: relative;
+}
+
+/* Movie list layout - make it wider and with more movies */
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Movie item styling */
+.feature-list-item {
+  position: relative;
+  width: calc(25% - 20px); /* Four items per row (25% width) */
+  height: 350px; /* Increase the height of the movie item for better visibility */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 30px; /* Space between items vertically */
+}
+
+/* Hover effect for movie item */
+.feature-list-item:hover .feature-list-item-img {
+  transform: scale(1.1);
+  opacity: 0.3;
+}
+
+.feature-list-item:hover .feature-list-item-title,
+.feature-list-item:hover .feature-list-item-description,
+.feature-list-item:hover .feature-list-item-button {
+  opacity: 1;
+}
+
+/* Image inside the movie item */
+.feature-list-item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Text content inside movie item */
+.feature-list-item-title,
+.feature-list-item-description,
+.feature-list-item-button {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  color: white;
+  transition: opacity 0.3s ease-in-out;
+  font-family: 'Press Start 2P', sans-serif; /* Pixelated font */
+}
+
+/* Title inside the movie item */
+.feature-list-item-title {
+  top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* Description inside the movie item */
+.feature-list-item-description {
+  top: 55px;
+  font-size: 14px;
+  opacity: 0;
+  z-index: 2;
+}
+
+/* Button inside the movie item */
+.feature-list-item-button {
+  bottom: 20px;
+  right: 30px;
+  padding: 8px 15px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  opacity: 0;
+  z-index: 2;
+}
+
+.feature-list-item-button:hover {
+  background-color: #0077cc; /* Blue background on hover */
+  cursor: pointer;
+}
+
+/* Hover effect for the movie item */
+.feature-list-item:hover .feature-list-item-button {
+  background-color: #0077cc; /* Blue background on hover */
+}
+
+/* Media queries to adjust for different screen sizes */
+@media only screen and (max-width: 800px) {
+  .feature-list-item {
+    width: calc(50% - 20px); /* Two items per row for medium-sized screens */
+    height: 350px; /* Keep the height consistent */
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .feature-list-item {
+    width: 100%; /* One item per row for small screens */
+    height: 350px; /* Keep the height consistent */
+  }
+}
