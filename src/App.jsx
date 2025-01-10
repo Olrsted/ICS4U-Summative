@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { StoreProvider } from "./context";
+import './App.css';
 import HomeView from "./views/HomeView.jsx";
 import RegisterView from "./views/RegisterView.jsx";
 import LoginView from "./views/LoginView.jsx";
@@ -8,15 +8,13 @@ import GenreView from "./views/GenreView.jsx";
 import DetailView from "./views/DetailView.jsx";
 import CartView from "./views/CartView.jsx";
 import SettingsView from "./views/SettingsView.jsx";
-import './App.css'
+import { StoreProvider } from "./context";
 
-
-const App = () => {
-
+function App() {
   return (
     <StoreProvider>
       <BrowserRouter>
-      <Routes>
+        <Routes>
           <Route path="/" element={<HomeView />} />
           <Route path="/register" element={<RegisterView />} />
           <Route path="/login" element={<LoginView />} />
@@ -29,7 +27,8 @@ const App = () => {
         </Routes>
       </BrowserRouter>
     </StoreProvider>
+
   )
 }
 
-export default App
+export default App;

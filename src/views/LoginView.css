@@ -8,8 +8,7 @@ body {
     font-family: 'Press Start 2P', cursive; /* Pixelated font */
     margin: 0;
     padding: 0;
-    height: 100%;
-    background-image: url('/src/imgs/HeroBG.png'); /* Ensure background image path is correct */
+    height: 100%; /* Ensure background image path is correct */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
